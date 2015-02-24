@@ -9,7 +9,7 @@ header {
       background: url(../img/home_splash.jpg);
       background-position: center center;
       background-repeat: no-repeat;
-      background-attachment: fixed;
+/*       background-attachment: fixed; */
       background-size: cover;
       height: 100%;
       position: relative;
@@ -18,7 +18,7 @@ header {
       background: url(../img/locations_splash.jpg);
       background-position: center center;
       background-repeat: no-repeat;
-      background-attachment: fixed;
+/*       background-attachment: fixed; */
       background-size: cover;
       height: 35%;
       position: relative;
@@ -168,10 +168,16 @@ footer {
       font-family: $Heading-regular;
       font-size: 16px;
       padding-bottom: 3px;
-      &.phone {
+      a.phone {
+         line-height:2em;
+         margin-top: 20px;
+         color: darken($darkgrey, 15%);
          font-family: $Heading-regular;
          padding-top:10px;
          font-size:20px;
+         &:hover{
+            color: $gold;
+         }
       }
    }
    .contact-social {
