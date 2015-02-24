@@ -1,0 +1,101 @@
+// Reset the box-sizing CSS Box Model
+
+*,
+*:before,
+*:after {
+   -moz-box-sizing: border-box;
+   -webkit-box-sizing: border-box;
+   box-sizing: border-box;
+}
+
+
+// Grid
+
+.container {
+   width: 100%;
+   max-width: 1320px;
+   margin: 0 auto;
+   padding-left: 20px;
+   padding-right: 20px;
+}
+
+.container-inner {
+   width: 100%;
+   max-width: 1000px;
+   margin: 0 auto;
+   padding-left: 20px;
+   padding-right: 20px;
+}
+
+.container-photo {
+   width: 100%;
+   margin: 0 auto;
+   .col-full, .col-two-thirds, .col-half, .col-third, .col-fourth {
+      float: left;
+      padding-right: 0px;
+      padding-left: 0px;
+      margin: 0px;
+   }
+   .col-third {
+      width: 100%;
+      @media (min-width: $width-small) {
+         width: 33.3%;
+      }
+   }
+   img {
+      width: 100%;
+      display: block;
+
+   }
+}
+
+.row {
+   margin-left:  -20px;
+   margin-right: -20px;
+
+   &:before {
+      content: " ";
+      display: table;
+   }
+   &:after {
+      content: " ";
+      display: table;
+      clear: both;
+   }
+}
+
+.col-full,
+.col-two-thirds,
+.col-half,
+.col-third,
+.col-fourth {
+   float: left;
+   padding-right: 20px;
+   padding-left: 20px;
+   margin: 0px;
+}
+
+.col-full {
+   width: 100%;
+}
+.col-two-thirds {
+   width: 100%;
+   @media (min-width: $width-small) {
+      width: 66.7%;
+   }
+}
+.col-half {
+   width: 50%;
+}
+.col-third {
+   width: 100%;
+   @media (min-width: $width-small) {
+      width: 50%;
+   }
+   @media (min-width: $width-medium) {
+      width: 33.3%;
+   }
+}
+.col-fourth {
+   width: 25%;
+}

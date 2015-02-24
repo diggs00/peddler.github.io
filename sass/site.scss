@@ -1,0 +1,188 @@
+html, body {
+   height: 100%;
+   position:relative;
+   z-index:0;
+}
+
+header {
+   &.home{
+      background: url(../img/home_splash.jpg);
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: cover;
+      height: 100%;
+      position: relative;
+   }
+   &.locations{
+      background: url(../img/locations_splash.jpg);
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: cover;
+      height: 35%;
+      position: relative;
+      h1 {
+         color: $white;
+         margin:0px;
+      }
+   }
+
+}
+
+.table {
+   display: table;
+   width: 100%;
+   height: 100%;
+/*    border: 1px dotted blue; */
+}
+.table-cell {
+/*    border: 1px dotted gray; */
+   display: table-cell;
+   text-align: center;
+   vertical-align: middle;
+}
+.logo-main {
+   width: 80%;
+   height: 80%;
+   display: inline-block;
+   vertical-align: top; /* Removes the extra white space below the baseline */
+   @media (min-width: $width-medium) {
+      width: 70%;
+      height: 70%;
+   }
+}
+
+
+.main-content {
+   z-index: 1;
+   position: relative;
+}
+
+p.subhead {
+   font-family: $Tagline;
+   font-style: italic;
+   color: darken($grey, 20%);
+   font-size: 24px;
+   letter-spacing: 1px;
+   width:200px;
+   border-bottom: 2px solid $grey;
+   margin: 0px auto;
+   line-height: 45px;
+   &.white {
+      color: $white;
+   }
+}
+
+
+section {
+   z-index: 1;
+   position: relative;
+   padding: 150px 0px;
+   text-align: center;
+   background: $white;
+   p.body-text {
+      color: darken($grey, 30%);
+      letter-spacing: 1px;
+   }
+   h1.heading {
+      line-height: 1em;
+   }
+   &.operation-band {
+      background-color: $blue;
+      background: url(../img/band-texture.jpg);
+      background-position: center center;
+      padding: 10px 0px;
+      h2 {
+         font-size: 18px;
+         color: darken($grey, 100%);
+         line-height: 1em;
+      }
+   }
+}
+
+
+section.photo {
+   background-color: $black;
+   padding: 0px 0px;
+   text-align: center;
+   z-index: 1;
+   position: relative;
+   overflow: hidden;
+}
+
+
+footer {
+   width: 100%;
+   background-color: $black;
+   z-index: -2;
+   position: relative;
+   display: block;
+   padding: 80px 0px 15px 0px;
+   color: darken($darkgrey, 15%);
+   .footer-image {
+      background: $black url(../img/footer_image.gif) right 0px no-repeat;
+      width:610px;
+      height: 385px;
+      position:fixed;
+      left:6%;
+      bottom:0;
+      z-index:-1;
+      @media (min-width: $width-small) {
+         left:30%;
+      }
+      @media (min-width: $width-medium) {
+         left:50%;
+      }
+      @media (min-width: $width-large) {
+         left:50%;
+      }
+   }
+   h3 {
+      margin-bottom:20px;
+   }
+   .address1 {
+      float:left;
+      margin-bottom: 30px;
+      @media (min-width: 600px) {
+         margin-right:40px;
+      }
+   }
+   .address2 {
+      float:left;
+   }
+   .location {
+      margin-bottom:15px;
+      p {
+         width:275px;
+         border-top: 1px solid darken($darkgrey, 15%);
+         border-bottom: 1px solid darken($darkgrey, 15%);
+         padding: 5px 0px;
+         margin: 0px;
+         letter-spacing: 2px;
+         font-size: 18px;
+         font-style: Italic;
+      }
+   }
+   li {
+      font-family: $Heading-regular;
+      font-size: 16px;
+      padding-bottom: 3px;
+      &.phone {
+         font-family: $Heading-regular;
+         padding-top:10px;
+         font-size:20px;
+      }
+   }
+   .contact-social {
+      margin-top: 40px;
+      margin-bottom: 60px;
+      @media (min-width: 645px) {
+         margin-top: 20px;
+      }
+      li {
+         font-size:40px;
+         padding-right: 15px;
+      }
+   }
+}

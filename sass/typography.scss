@@ -1,0 +1,157 @@
+body {
+   color: darken($grey, 50%);
+   @media (min-width: $width-small) {
+      font-size:18px;
+   }
+   @media (min-width: $width-medium) {
+      font-size:20px;
+   }
+
+}
+
+/* Fonts */
+@font-face {
+   font-family: 'FuturaLT-Bold';
+   src: url('../fonts/FuturaLT-Bold.eot');
+   src: url('../fonts/FuturaLT-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/FuturaLT-Bold.woff') format('woff'),
+        url('../fonts/FuturaLT-Bold.ttf')  format('truetype'),
+        url('../fonts/FuturaLT-Bold.svg#FuturaLT-Bold') format('svg');
+   font-weight: normal;
+   font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'proxima_nova_rgbold';
+    src: url('../fonts/ProximaNova-Bold-webfont.eot');
+    src: url('../fonts/ProximaNova-Bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/ProximaNova-Bold-webfont.woff2') format('woff2'),
+         url('../fonts/ProximaNova-Bold-webfont.woff') format('woff'),
+         url('../fonts/ProximaNova-Bold-webfont.ttf') format('truetype'),
+         url('../fonts/ProximaNova-Bold-webfont.svg#proxima_nova_rgbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'proxima_nova_rregular';
+    src: url('../ProximaNova-Regular-webfont.eot');
+    src: url('../ProximaNova-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../ProximaNova-Regular-webfont.woff2') format('woff2'),
+         url('../ProximaNova-Regular-webfont.woff') format('woff'),
+         url('../ProximaNova-Regular-webfont.ttf') format('truetype'),
+         url('../ProximaNova-Regular-webfont.svg#proxima_nova_rgregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'bodonino1urwtitalic';
+    src: url('../fonts/bodonino1urwt-italic-webfont.eot');
+    src: url('../fonts/bodonino1urwt-italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/bodonino1urwt-italic-webfont.woff2') format('woff2'),
+         url('../fonts/bodonino1urwt-italic-webfont.woff') format('woff'),
+         url('../fonts/bodonino1urwt-italic-webfont.ttf') format('truetype'),
+         url('../fonts/bodonino1urwt-italic-webfont.svg#bodonino1urwtitalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'eb_garamondregular';
+    src: url('../fonts/EBGaramond-webfont.eot');
+    src: url('../fonts/EBGaramond-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/EBGaramond-webfont.woff2') format('woff2'),
+         url('../fonts/EBGaramond-webfont.woff') format('woff'),
+         url('../fonts/EBGaramond-webfont.ttf') format('truetype'),
+         url('../fonts/EBGaramond-webfont.svg#eb_garamondregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+p {
+   font-family: $Tagline;
+   line-height: 2em;
+   @media (min-width: $width-small) {
+      line-height: 1.7em;
+   }
+}
+
+small {
+   font-size: 12px;
+   &.copywright {
+      color: darken($grey, 30%);
+   }
+}
+
+h1,h2 {
+   font-family: $Heading;
+}
+
+h1 {
+   margin-top: 10px;
+   font-size: 40px;
+   letter-spacing: 5px;
+   @media (min-width: $width-medium) {
+      font-size: 52px;
+   }
+}
+
+h2 {
+   letter-spacing: 2px;
+   margin:0px;
+}
+
+h3 {
+   font-size: 25px;
+   font-family: $Heading;
+   letter-spacing: 2px;
+   margin:0px;
+}
+
+
+
+
+/* Icons */
+@font-face {
+	font-family: 'icon';
+	src:url('../fonts/icon.eot?d4cwrs');
+	src:url('../fonts/icon.eot?#iefixd4cwrs') format('embedded-opentype'),
+		url('../fonts/icon.woff?d4cwrs') format('woff'),
+		url('../fonts/icon.ttf?d4cwrs') format('truetype'),
+		url('../fonts/icon.svg?d4cwrs#icon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+[class^="icon_"], [class*=" icon_"] {
+	font-family: 'icon';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.icon_email:before {
+	content: "\e600";
+}
+
+.icon_facebook:before {
+	content: "\e601";
+}
+
+.icon_instagram:before {
+	content: "\e602";
+}
