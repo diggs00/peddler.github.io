@@ -124,12 +124,13 @@ footer {
       background: $black url(../img/footer_image.gif) right 0px no-repeat;
       width:610px;
       height: 385px;
-      position:fixed;
+      z-index:-1;
+      position:absolute;
       left:6%;
       bottom:0;
-      z-index:-1;
       @media (min-width: $width-small) {
          left:30%;
+         position:fixed;
       }
       @media (min-width: $width-medium) {
          left:50%;
