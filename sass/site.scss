@@ -124,19 +124,18 @@ footer {
    padding: 80px 0px 15px 0px;
    color: darken($darkgrey, 15%);
    .footer-image {
-      background: $black url(../img/footer_image.gif) right 0px no-repeat;
-      width:610px;
-      height: 385px;
-      z-index:-1;
-      position:absolute;
-      left:6%;
-      bottom:0;
       @media (min-width: $width-small) {
+         background: $black url(../img/footer_image.gif) right 0px no-repeat;
          left:30%;
          position:fixed;
+         width:610px;
+         height: 385px;
+         z-index:-1;
+         left:19%;
+         bottom:0;
       }
       @media (min-width: $width-medium) {
-         left:50%;
+         left:41%;
       }
       @media (min-width: $width-large) {
          left:50%;
