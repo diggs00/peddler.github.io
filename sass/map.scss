@@ -1,0 +1,76 @@
+
+
+#google-container, #google-container2 {
+  position: relative;
+  width: 100%;
+  height: 300px;
+  @media (min-width: $width-medium) {
+      height: 500px;
+  }
+  @media (min-width: $width-large) {
+      height: 600px;
+  }
+}
+
+
+#cd-google-map {
+   position: relative;
+   padding:0px;
+}
+#cd-google-map address {
+   background-color: $blue;
+   color: white;
+   background: url(../img/location-texture.jpg);
+   background-position: center center;
+   padding: 10px 0px;
+   font-family: "Libre Baskerville",serif;
+   letter-spacing: 2px;
+   font-size: 13px;
+   font-style: Italic;
+   position: absolute;
+   width: 100%;
+   bottom: 0;
+   left: 0;
+   padding: 5px 0px;
+
+   text-align: center;
+   @media (min-width: $width-large) {
+      font-size: 18px;
+   }
+}
+
+
+
+#cd-zoom-in, #cd-zoom-out {
+  height: 32px;
+  width: 32px;
+  cursor: pointer;
+  margin-left: 10px;
+  background-color: $darkgrey;
+  background-repeat: no-repeat;
+  background-size: 32px 64px;
+  background-image: url("../img/cd-icon-controller.svg");
+}
+.no-touch #cd-zoom-in:hover, .no-touch #cd-zoom-out:hover {
+   background-color: darken($grey, 80%);
+}
+@media only screen and (min-width: 768px) {
+  #cd-zoom-in, #cd-zoom-out {
+    margin-left: 50px;
+  }
+}
+
+#cd-zoom-in {
+  background-position: 50% 0;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+@media only screen and (min-width: 768px) {
+  #cd-zoom-in {
+    margin-top: 50px;
+  }
+}
+
+#cd-zoom-out {
+  background-position: 50% -32px;
+}
