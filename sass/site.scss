@@ -2,6 +2,7 @@ html, body {
    height: 100%;
    position:relative;
    z-index:0;
+   font-family: $Body;
 }
 
 header {
@@ -157,6 +158,7 @@ footer {
    .location {
       margin-bottom:15px;
       p {
+         font-family: $Body-Bold-italic;
          width:275px;
          border-top: 1px solid darken($darkgrey, 15%);
          border-bottom: 1px solid darken($darkgrey, 15%);
@@ -164,18 +166,17 @@ footer {
          margin: 0px;
          letter-spacing: 2px;
          font-size: 18px;
-         font-style: Italic;
       }
    }
    li {
-      font-family: $Heading-regular;
+      font-family: $Body;
       font-size: 16px;
       padding-bottom: 3px;
       a.phone {
          line-height:2em;
          margin-top: 20px;
          color: darken($darkgrey, 15%);
-         font-family: $Heading-regular;
+         font-family: $Body-Bold;
          padding-top:10px;
          font-size:20px;
          &:hover{
@@ -234,8 +235,9 @@ section.location {
       margin: 0px auto 20px;
       letter-spacing: 2px;
       font-size: 18px;
-      font-style: Italic;
+      font-family: $Body-Bold-italic;
       @media (min-width: $width-small) {
+         margin: 25px auto;
          width: 300px;
          text-align: left;
          float: left;
@@ -248,13 +250,12 @@ section.location {
          text-align: left;
       }
       li {
-         font-family: proxima_nova_rregular,Arial,sans-serif;
          font-size: 16px;
          padding-bottom: 3px;
          a {
             line-height: 2em;
             margin-top: 20px;
-            font-family: proxima_nova_rregular,Arial,sans-serif;
+            font-family: $Body-Bold;
             padding-top: 10px;
             font-size: 20px;
          }

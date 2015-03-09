@@ -17,22 +17,21 @@
    position: relative;
    padding:0px;
 }
-#cd-google-map address {
+#cd-google-map h1{
+   margin: 0px;
    background-color: $blue;
-   color: white;
-   background: url(../img/location-texture.jpg);
+   color: $gold;
+   background: url(../img/location-texture.png);
    background-position: center center;
    padding: 10px 0px;
-   font-family: "Libre Baskerville",serif;
+   font-family: $Heading;
    letter-spacing: 2px;
    font-size: 13px;
-   font-style: Italic;
    position: absolute;
    width: 100%;
    bottom: 0;
    left: 0;
    padding: 5px 0px;
-
    text-align: center;
    @media (min-width: $width-large) {
       font-size: 18px;

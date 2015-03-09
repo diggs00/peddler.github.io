@@ -1,10 +1,11 @@
 body {
    color: darken($grey, 50%);
+   font-size:18px;
    @media (min-width: $width-small) {
-      font-size:18px;
+      font-size:20px;
    }
    @media (min-width: $width-medium) {
-      font-size:20px;
+      font-size:22px;
    }
 
 }
@@ -20,6 +21,67 @@ body {
    font-weight: normal;
    font-style: normal;
 }
+
+
+@font-face {
+   font-family: 'Sentinel-SemiboldItalic';
+   src: url('../fonts/Sentinel-SemiboldItaliceot');
+   src: url('../fonts/Sentinel-SemiboldItalic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Sentinel-SemiboldItalic.woff') format('woff'),
+        url('../fonts/Sentinel-SemiboldItalic.ttf')  format('truetype'),
+        url('../fonts/Sentinel-SemiboldItalicsvg#FuturaLT-Bold') format('svg');
+   font-weight: normal;
+   font-style: normal;
+}
+
+@font-face {
+   font-family: 'SentinelBook';
+   src: url('../fonts/SentinelBook.eot');
+   src: url('../fonts/SentinelBook.eot') format('embedded-opentype'),
+        url('../fonts/SentinelBook.woff2') format('woff2'),
+        url('../fonts/SentinelBook.woff') format('woff'),
+        url('../fonts/SentinelBook.ttf') format('truetype'),
+        url('../fonts/SentinelBook.svg#SentinelBook') format('svg');
+   font-weight: normal;
+   font-style: normal;
+}
+
+@font-face {
+   font-family: 'SentinelBookItalic';
+   src: url('../fonts/SentinelBookItalic.eot');
+   src: url('../fonts/SentinelBookItalic.eot') format('embedded-opentype'),
+        url('../fonts/SentinelBookItalic.woff2') format('woff2'),
+        url('../fonts/SentinelBookItalic.woff') format('woff'),
+        url('../fonts/SentinelBookItalic.ttf') format('truetype'),
+        url('../fonts/SentinelBookItalic.svg#SentinelBookItalic') format('svg');
+   font-weight: normal;
+   font-style: normal;
+}
+
+@font-face {
+    font-family: 'SentinelMedium';
+    src: url('../fonts/SentinelMedium.eot');
+    src: url('../fonts/SentinelMedium.eot') format('embedded-opentype'),
+         url('../fonts/SentinelMedium.woff2') format('woff2'),
+         url('../fonts/SentinelMedium.woff') format('woff'),
+         url('../fonts/SentinelMedium.ttf') format('truetype'),
+         url('../fonts/SentinelMedium.svg#SentinelMedium') format('svg');
+         font-weight: normal;
+         font-style: normal;
+}
+
+@font-face {
+    font-family: 'SentinelMediumItalic';
+    src: url('../fonts/SentinelMediumItalic.eot');
+    src: url('../fonts/SentinelMediumItalic.eot') format('embedded-opentype'),
+         url('../fonts/SentinelMediumItalic.woff2') format('woff2'),
+         url('../fonts/SentinelMediumItalic.woff') format('woff'),
+         url('../fonts/SentinelMediumItalic.ttf') format('truetype'),
+         url('../fonts/SentinelMediumItalic.svg#SentinelMediumItalic') format('svg');
+   font-weight: normal;
+   font-style: normal;
+}
+
 
 
 @font-face {
@@ -46,37 +108,11 @@ body {
     font-style: normal;
 }
 
-@font-face {
-    font-family: 'bodonino1urwtitalic';
-    src: url('../fonts/bodonino1urwt-italic-webfont.eot');
-    src: url('../fonts/bodonino1urwt-italic-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/bodonino1urwt-italic-webfont.woff2') format('woff2'),
-         url('../fonts/bodonino1urwt-italic-webfont.woff') format('woff'),
-         url('../fonts/bodonino1urwt-italic-webfont.ttf') format('truetype'),
-         url('../fonts/bodonino1urwt-italic-webfont.svg#bodonino1urwtitalic') format('svg');
-    font-weight: normal;
-    font-style: normal;
 
-}
-
-
-@font-face {
-    font-family: 'eb_garamondregular';
-    src: url('../fonts/EBGaramond-webfont.eot');
-    src: url('../fonts/EBGaramond-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/EBGaramond-webfont.woff2') format('woff2'),
-         url('../fonts/EBGaramond-webfont.woff') format('woff'),
-         url('../fonts/EBGaramond-webfont.ttf') format('truetype'),
-         url('../fonts/EBGaramond-webfont.svg#eb_garamondregular') format('svg');
-    font-weight: normal;
-    font-style: normal;
-
-}
 
 
 
 p {
-   font-family: $Tagline;
    line-height: 2em;
    @media (min-width: $width-small) {
       line-height: 1.7em;
