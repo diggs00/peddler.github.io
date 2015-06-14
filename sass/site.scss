@@ -94,23 +94,11 @@ section {
       background: url(../img/band-texture.jpg);
       background-position: center center;
       padding: 10px 0px;
-      @media (min-width: $width-medium) {
-         text-align: left;
-      }
       h2 {
          font-size: 18px;
          color: darken($grey, 100%);
          line-height: 1em;
          margin-bottom: 0px;
-         @media (min-width: $width-medium) {
-            margin-bottom: 0px;
-         }
-      }
-      .avery-time {
-         margin-top: 10px;
-         @media (min-width: $width-medium) {
-            margin-top: 0px;
-         }
       }
    }
 }
