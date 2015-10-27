@@ -1,4 +1,6 @@
 
+
+
 // Navigation menu
 $(document).ready(function () {
   $(".hamburger").click(function () {
@@ -471,6 +473,11 @@ jQuery(document).ready(function($){
 	 	icon: marker_url,
 	});
 
+   $("#hydepark_map_reload").click(function () {
+         setTimeout(function(){ google.maps.event.trigger(map, 'resize'); }, 500);
+         setTimeout(function(){ map.setCenter(marker.position); }, 500);
+   });
+
 	//add custom buttons for the zoom-in/zoom-out on the map
 	function CustomZoomControl(controlDiv, map) {
 		//grap the zoom elements from the DOM and insert them in the map
@@ -494,3 +501,42 @@ jQuery(document).ready(function($){
   	//insert the zoom div on the top left of the map
   	map.controls[google.maps.ControlPosition.LEFT_TOP].push(zoomControlDiv);
 });
+
+
+
+// TABS
+jQuery(document).ready(function() {
+    jQuery('.tabs .tab-links a').on('click', function(e)  {
+        var currentAttrValue = jQuery(this).attr('href');
+
+        // Show/Hide Tabs
+        jQuery('.tabs ' + currentAttrValue).fadeIn(400).siblings().hide();
+
+        // Change/remove current tab to active
+        jQuery(this).parent('li').addClass('active').siblings().removeClass('active');
+
+        e.preventDefault();
+    });
+});
+
+
+
+
+
+
+//
+// $(document).ready(function () {
+//   $("#playByPlayBtn").click(function () {
+//     $(this).addClass("active");
+//     $("#playByPlay").addClass("active");
+//     $("#boxScoreBtn").removeClass("active");
+//     $("#boxScore").removeClass("active");
+//
+//   });
+//   $("#boxScoreBtn").click(function () {
+//     $(this).addClass("active");
+//     $("#boxScore").addClass("active");
+//     $("#playByPlayBtn").removeClass("active");
+//     $("#playByPlay").removeClass("active");
+//   });
+// });

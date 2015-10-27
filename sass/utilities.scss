@@ -1,3 +1,73 @@
+/* Buttons */
+.button{
+   padding:10px;
+   border-radius: 5px;
+   -webkit-transition: background-color 0.3s ease 0s;
+   -moz-transition: background-color 0.3s ease 0s;
+   -o-transition: background-color 0.3s ease 0s;
+   transition: background-color 0.3s ease 0s;
+   background-color: $grey;
+   &:hover {
+      background: $gold;
+      color:inherit;
+   }
+}
+
+
+/*----- Tabs -----*/
+.tabs {
+   position: relative;
+   .tab-links {
+      margin-bottom: 100px;
+      li {
+         padding-right: 15px;
+         display: inline;
+         &:last-child {
+         padding-right: 0px;
+         }
+      }
+   }
+
+   a {
+      color: inherit;
+   }
+   li.active {
+      .button {
+         background-color: $gold;
+         cursor: default;
+      }
+   }
+}
+
+/*----- Content of Tabs -----*/
+ .tab-content {
+    position: relative;
+ }
+
+.tab {
+   display:none;
+}
+
+.tab.active {
+   display:block;
+}
+
+
+
+
+hr.light {
+   display: block;
+   height: 1px;
+   border: 0;
+   border-top: 2px solid $grey;
+   margin: 1em 0;
+   padding: 0;
+}
+
+
+
+
+
 /* Forms */
 label {
    color: darken($grey, 30%);
