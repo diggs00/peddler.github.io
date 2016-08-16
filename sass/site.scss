@@ -10,13 +10,26 @@ header {
       background: url(../img/home_splash.jpg);
       background-position: center center;
       background-repeat: no-repeat;
-/*       background-attachment: fixed; */
+// background-attachment: fixed;
       background-size: cover;
       height: 100%;
       position: relative;
    }
    &.locations{
       background: url(../img/locations_splash.jpg);
+      background-position: center center;
+      background-repeat: no-repeat;
+/*       background-attachment: fixed; */
+      background-size: cover;
+      height: 20%;
+      position: relative;
+      h1 {
+         color: $white;
+         margin:0px;
+      }
+   }
+   &.rides{
+      background: url(../img/rides_splash.jpg);
       background-position: center center;
       background-repeat: no-repeat;
 /*       background-attachment: fixed; */
@@ -263,6 +276,64 @@ section.location {
       &.clip-circle {
          -webkit-clip-path: circle(50% at 50% 50%);
          clip-path: circle(50% at 50% 50%);
+      }
+   }
+}
+
+
+
+/* --------------------- RIDE ---------------------  */
+
+section.ride {
+   text-align: center;
+   padding-bottom: 0px;
+}
+
+.ride-info {
+   text-align: initial;
+   .ride {
+      margin-bottom: 120px;
+   }
+   p {
+      font-family: $Body-Bold-italic;
+      padding: 0px;
+      margin: 0px 0px 0px 0px;
+      letter-spacing: 2px;
+      font-size: 18px;
+   }
+   ul {
+      margin-left: 70px;
+   }
+   li {
+      font-family: $Body;
+      font-size: 16px;
+      padding-bottom: 3px;
+   }
+   a {
+      color: $blue;
+      font-size: 20px;
+      text-decoration: none;
+      -webkit-transition: color 0.15s ease-in-out;
+      -moz-transition: color 0.15s ease-in-out;
+      -ms-transition: color 0.15s ease-in-out;
+      -o-transition: color 0.15s ease-in-out;
+      transition: color 0.15s ease-in-out;
+      &:hover{
+         color: darken($blue, 20%);
+      }
+   }
+   .circle {
+      float:left;
+      height: 50px;
+      width: 50px;
+      position: relative;
+      border-radius: 50%;
+      background-color: $grey;
+      border: 3px solid $darkgrey;
+      padding: 11px 0 0 0;
+      text-align: center;
+      h6 {
+         letter-spacing: 0px;
       }
    }
 }

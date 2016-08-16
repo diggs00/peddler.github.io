@@ -168,8 +168,14 @@ button {
    }
 }
 
+// Display
+.inline {
+   display: inline;
+}
 
-
+.block {
+   display: block;
+}
 
 // Text Align
 .text-center {
@@ -204,6 +210,10 @@ button {
 
 .margin-top-xl {
    margin-top: 30px;
+}
+
+.margin-top-xxl {
+   margin-top: 60px;
 }
 
 
