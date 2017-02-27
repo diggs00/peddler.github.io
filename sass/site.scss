@@ -246,9 +246,13 @@ section.location {
       padding-bottom: 3px;
    }
    .inline li {
-      padding-right: 10px;
-      &:last-child {
-      padding-right: 0px;
+      display: block;
+      @media (min-width: $width-small) {
+         display: inline;
+         padding-right: 10px;
+         &:last-child {
+            padding-right: 0px;
+         }
       }
    }
    a {

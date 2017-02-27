@@ -4,8 +4,8 @@
 // MAP RIDE 1
 jQuery(document).ready(function($){
 	//set your google maps parameters
-	var latitude = 30.498437,
-		longitude = -97.773888,
+	var latitude = 30.533851,
+		longitude = -97.781004,
       map_zoom = 16;
 
 	//google map custom marker icon - .png fallback for IE11
@@ -239,8 +239,8 @@ jQuery(document).ready(function($){
 // MAP RIDE 2
 jQuery(document).ready(function($){
 	//set your google maps parameters
-	var latitude = 30.498437,
-		longitude = -97.773888,
+	var latitude = 30.533851,
+		longitude = -97.781004,
       map_zoom = 16;
 
 	//google map custom marker icon - .png fallback for IE11
@@ -474,8 +474,8 @@ jQuery(document).ready(function($){
 // MAP RIDE 3
 jQuery(document).ready(function($){
 	//set your google maps parameters
-	var latitude = 30.498437,
-		longitude = -97.773888,
+	var latitude = 30.533851,
+		longitude = -97.781004,
       map_zoom = 16;
 
 	//google map custom marker icon - .png fallback for IE11
@@ -709,8 +709,8 @@ jQuery(document).ready(function($){
 // MAP RIDE 4
 jQuery(document).ready(function($){
 	//set your google maps parameters
-	var latitude = 30.498437,
-		longitude = -97.773888,
+	var latitude = 30.533851,
+		longitude = -97.781004,
       map_zoom = 16;
 
 	//google map custom marker icon - .png fallback for IE11
